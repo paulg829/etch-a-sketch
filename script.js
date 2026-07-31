@@ -14,8 +14,7 @@ function createGrid(size) {
 
         square.style.width = `${squareSize}px`;
         square.style.height = `${squareSize}px`;
-        square.style.opacity = 
-        Number(square.style.opacity || 0) + 0.1;
+
 
         square.addEventListener("mouseover", () => {
 
@@ -23,8 +22,11 @@ function createGrid(size) {
             `rgb(
             ${Math.floor(Math.random() * 250)},
             ${Math.floor(Math.random() * 250)},
-            ${Math.floor(Math.random() * 250)},
+            ${Math.floor(Math.random() * 250)}
             )`;
+
+            square.style.opacity = 
+            Number(square.style.opacity || 0) + 0.1;
 
         });
 
